@@ -27,6 +27,8 @@ hint:
 hint:   git branch -m <name>
 Initialized empty Git repository in /home/project/.git/
 
+theia@theia-ronaldphilli:/home/project$ git config --global --add safe.directory /home/project
+
 theia@theia-ronaldphilli:/home/project$ git remote add origin https://github.com/mcspidy/JavaScript-Programming-Essentials.git
 
 theia@theia-ronaldphilli:/home/project$ git pull origin origin2 --allow-unrelated-histories
