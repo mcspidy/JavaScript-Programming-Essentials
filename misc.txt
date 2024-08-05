@@ -1,0 +1,36 @@
+git init
+git config --global --add safe.directory /home/project
+git remote add origin /home/project
+git fetch
+git reset origin2/master  # Required when the versioned files existed in path before "git init" of this repo.
+git checkout -t origin2/master
+
+git init
+git config --global --add safe.directory /home/project
+git remote add origin https://github.com/mcspidy/JavaScript-Programming-Essentials.git /home/project
+git pull origin origin2
+git branch --set-upstream-to=origin/master master
+
+
+$ cd /home/project/
+
+theia@theia-ronaldphilli:/home/project$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint:   git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/project/.git/
+
+theia@theia-ronaldphilli:/home/project$ git remote add origin https://github.com/mcspidy/JavaScript-Programming-Essentials.git
+
+theia@theia-ronaldphilli:/home/project$ git pull origin origin2 --allow-unrelated-histories
+
+
+theia@theia-ronaldphilli:/home/project$ 
+
