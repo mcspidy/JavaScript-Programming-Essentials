@@ -1,17 +1,8 @@
 var xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-       // Typical action to be performed when the document is ready:
-       document.getElementById('articles').innerHTML = xhr.responseText;
-    }
-};
-var url = './health.json';
+var url = 'C:/OneDrive/Source/Training/Coursera/IBM Full-Stack Javascript Developer/JavaScript Programming Essentials/Hands-on_Labs/Project/jscoursetesting/healthArticle/health.json';
 
 xhr.open('GET', url, true);
 xhr.responseType = 'json';
-var data = xhr.responseText;
-var jsonResponse = JSON.parse(data);
-console.log(jsonResponse);
 
 var articles = xhr.response.articles;
 var articlesDiv = document.getElementById('articles');
