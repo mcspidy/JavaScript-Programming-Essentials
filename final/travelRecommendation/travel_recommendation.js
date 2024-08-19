@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 async function fetchData() {
-    const response = await fetch('https://raw.githubusercontent.com/mcspidy/JavaScript-Programming-Essentials-Final/coursera/travelRecommendation/travel_recommendation_api.json');
+    const response = await fetch('https://mcspidy.github.io/JavaScript-Programming-Essentials/final/travelRecommendation/travel_recommendation_api.json');
     const data = await response.json();
         return data;
 };
