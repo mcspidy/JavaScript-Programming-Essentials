@@ -36,3 +36,5 @@ theia@theia-ronaldphilli:/home/project$ git pull origin origin2 --allow-unrelate
 
 theia@theia-ronaldphilli:/home/project$ 
 
+git branch
+git clone -b coursera --single-branch https://github.com/mcspidy/JavaScript-Programming-Essentials-Final.git Final

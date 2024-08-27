@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blastoff_to_Travel</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="imageLib/AI_LOGO_1.png" alt="Company Logo" class="logo">
+                <span class="company-name">Blastoff Travel</span>
+            </div>
+            <div class="nav-links">
+                <a href="./travel_recommendation.html" id="home" class="nav-link">Home </a>
+                <a href="./travel_about_us.html" id="aboutus" class="nav-link">About Us </a>
+                <a href="./travel_contact.html" id="contact" class="nav-link">Contact Us </a>
+            </div>
+            <input type="text" id="search-bar" placeholder="Search...">
+            <button id="search-button">Search</button>
+            <button id="reset-button">Reset</button>
+            <button class="nav-toggle" id="nav-toggle">☰</button>
+        </nav>
+    </header>
+    <main>
+        <section class="home-section">
+            <div class="intro">
+                <h1>Welcome to Blastoff Travel</h1>
+                <p>Your ultimate destination for travel recommendations and tips. Explore the universe with us and discover amazing places to visit, exciting activities to do, and the best travel deals.</p>
+                <p></p>
+            <button id="book-now-button" onclick="booknow()">Book Now</button>
+            </div>
+            <div class="searchCondition">
+                <div id="result"></div>
+            </div>
+        </section>
+    </main>
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>
